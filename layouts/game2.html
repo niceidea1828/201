@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game2.css" />
+    <title>This App</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <a href="main.html" class="back b-btn light">Exit</a>
+
+      <div class="layout">
+        <div class="layout_title">Select the bid amount</div>
+        <div class="bet_cont"></div>
+
+        <div class="btn layout_start">Start</div>
+      </div>
+
+      <div class="modal hidden">
+        <img src="../png/modal.png" alt="" />
+        <div class="modal_result">8000</div>
+      </div>
+
+      <div class="game">
+        <div class="game_blocks"></div>
+        <img src="../png/pinball_field.png" alt="" class="field" />
+
+        <img src="../png/stick_left.png" alt="" class="left stick" />
+        <img src="../png/stick_right.png" alt="" class="right stick" />
+
+        <img src="../png/pinball.png" alt="" class="ball" />
+      </div>
+
+      <div class="btns block">
+        <div class="hit-btn left block">UP LEFT</div>
+        <div class="hit-btn right block">UP RIGHT</div>
+      </div>
+
+      <div class="attempts block"></div>
+    </div>
+
+    <script src="../scripts/jQuery.js"></script>
+    <script src="../scripts/pinBallPaths.js"></script>
+    <script src="../scripts/game2.js"></script>
+  </body>
+</html>

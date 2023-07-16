@@ -1,0 +1,112 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 12;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 326px;
+  height: 345px;
+
+  padding: 15px 0;
+  border-radius: 39px;
+  background: linear-gradient(180deg, #073b67 0%, #081223 100%);
+}
+
+.modal_res {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.modal_choice {
+  width: 205px;
+  height: 65px;
+
+  font-size: 31.133px;
+}
+
+.modal_choice.act {
+  border: 3px solid #1c77ff;
+}
+
+.modal_ok {
+  width: 44.101px;
+  height: 44.101px;
+
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.back {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.complex {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.game {
+  position: relative;
+  width: 260px;
+
+  margin: 150px auto auto;
+}
+
+.game img {
+  max-width: 100%;
+}
+
+.ball {
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 6px);
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #f00 0%, #7a0404 100%);
+
+  transition: transform 0.5s ease;
+}
+
+.control1 {
+  width: 320px;
+  margin: 20px auto auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play {
+  width: 140px;
+}
+
+.bet_cont {
+  margin: 20px auto auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+
+  width: 250px;
+}
+
+.bet {
+  width: 120px;
+}
+
+.bet.act {
+  border: 3px solid #1c77ff;
+}

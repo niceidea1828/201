@@ -1,0 +1,174 @@
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.layout_title {
+  margin: 120px auto auto;
+  text-align: center;
+
+  font-size: 24.477px;
+  font-weight: 600;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+
+  width: 320px;
+}
+
+.modal img {
+  width: 100%;
+}
+
+.modal_result {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+
+  left: 58%;
+  top: 138px;
+  font-size: 28px;
+  font-weight: 600;
+  transform: translateX(-50%);
+}
+
+.bet_cont {
+  margin: 80px auto auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+
+  width: 250px;
+}
+
+.bet {
+  width: 120px;
+}
+
+.bet.act {
+  border: 3px solid #1c77ff;
+}
+
+.layout_start {
+  margin: 50px auto auto;
+}
+
+.back {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 10;
+}
+
+.game {
+  position: relative;
+  width: 350px;
+  margin: 70px auto auto;
+}
+
+.game_blocks {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+  gap: 5px 5px;
+  margin: auto;
+}
+
+.game_block {
+  width: 70px;
+  height: 28px;
+
+  border-radius: 7px;
+  background: linear-gradient(180deg, #2a7cbd 0%, #1a9fff 100%);
+}
+
+.game_block.empty {
+  background: none;
+}
+
+.field {
+  margin: 50px auto auto;
+}
+
+.stick {
+  position: absolute;
+  bottom: 10px;
+}
+
+.stick.left {
+  left: 65px;
+  transform-origin: left;
+  transition: transform 0.3s linear;
+}
+
+.stick.right {
+  right: 65px;
+  transform-origin: right;
+  transition: transform 0.3s linear;
+}
+
+.btns {
+  margin: 20px auto auto;
+  gap: 20px;
+}
+
+.hit-btn {
+  width: 119px;
+  height: 48px;
+
+  border-radius: 9px;
+  border: 5px solid #fff;
+  background: linear-gradient(180deg, #ea1907 0%, #ca0502 100%);
+
+  font-size: 13.713px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.attempts {
+  margin: 20px auto auto;
+  gap: 5px;
+}
+
+.ball {
+  position: absolute;
+  left: 120px;
+  bottom: 34px;
+
+  transition: transform 0.3s linear;
+}
+
+@media screen and (max-height: 795px) {
+  .game {
+    transform: scale(0.8);
+    margin-top: 0;
+    margin-bottom: -40px;
+  }
+}
+
+@media screen and (max-height: 684px) {
+  .game {
+    transform: scale(0.7);
+    margin-top: 0;
+    margin-bottom: -65px;
+  }
+}

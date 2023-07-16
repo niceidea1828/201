@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>This App</title>
+  </head>
+  <body>
+    <div class="wrapper hidden">
+      <div class="modal">
+        <div class="modal_res">Complexity</div>
+
+        <div class="modal_choice b-btn act">Easy</div>
+        <div class="modal_choice b-btn">Medium</div>
+        <div class="modal_choice b-btn">Hard</div>
+
+        <img src="../png/cross.png" alt="" class="modal_ok" />
+      </div>
+
+      <a href="main.html" class="back b-btn light">Exit</a>
+      <div class="complex b-btn light">Complexity</div>
+
+      <div class="game">
+        <div class="ball"></div>
+        <img src="../png/f1.png" alt="" class="field" />
+      </div>
+
+      <div class="control1">
+        <div class="balance_cont b-btn">
+          <img src="../png/coin.png" alt="" />
+          <div class="balance"></div>
+        </div>
+
+        <img src="../png/play.png" alt="" class="play" />
+      </div>
+
+      <div class="bet_cont"></div>
+    </div>
+
+    <script src="../scripts/jQuery.js"></script>
+    <script src="../scripts/game.js"></script>
+  </body>
+</html>

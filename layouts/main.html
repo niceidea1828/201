@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper hidden">
+      <div class="balance_cont b-btn">
+        <img src="../png/coin.png" alt="" />
+        <div class="balance"></div>
+      </div>
+
+      <a href="../index.html" class="b-btn policy">Privacy Policy</a>
+
+      <a href="game.html" class="link-1 link">
+        <img src="../png/gl1.png" alt="" />
+      </a>
+      <a href="game2.html" class="link-2 link">
+        <img src="../png/gl2.png" alt="" />
+      </a>
+    </div>
+
+    <script src="../scripts/jQuery.js"></script>
+    <script>
+      if (!localStorage.balance_g201) {
+        localStorage.balance_g201 = 5000;
+      }
+
+      $(".balance").html(localStorage.balance_g201);
+
+      window.onload = () => {
+        $(".wrapper").removeClass("hidden");
+      };
+    </script>
+  </body>
+</html>

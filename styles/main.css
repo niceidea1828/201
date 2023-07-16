@@ -1,0 +1,28 @@
+.policy {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.link-1 {
+  margin: 80px auto auto;
+}
+
+.link-2 {
+  margin: 25px auto auto;
+}
+
+.link {
+  display: block;
+  width: 240px;
+}
+
+.link img {
+  width: 100%;
+}
+
+.balance_cont {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

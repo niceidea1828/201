@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-V.ttf);
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  background: #122230;
+  color: #ffffff;
+}
+
+.wrapper {
+  position: relative;
+  overflow: auto;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #08060f 0%, #06487d 100%);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none !important;
+}
+
+.btn {
+  width: 247px;
+  height: 72.954px;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  border-radius: 15.633px;
+  background: linear-gradient(90deg, #ddf80c 0%, #4bff3c 49.56%, #ddf80d 100%);
+
+  color: #000;
+  font-size: 28.803px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-btn {
+  width: 119px;
+  height: 38px;
+
+  border-radius: 9px;
+  background: #1b232a;
+
+  font-size: 13.029px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-btn img {
+  margin-right: 5px;
+}
+
+.b-btn.light {
+  border-radius: 9px;
+  background: #072542;
+}
